@@ -1,18 +1,115 @@
-section {
-  margin-bottom: 60px;
+/* ---------- Global Styles ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+  padding: 0 40px;
+  line-height: 1.6;
+}
+
+/* ---------- Navigation Bar ---------- */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #020617;
+  padding: 15px 0;
+  z-index: 100;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #e5e7eb;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #3b82f6;
+}
+
+/* ---------- Sections ---------- */
+section {
+  margin-bottom: 80px;
+}
+
+/* ---------- Home / Hero Section ---------- */
+#home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+#home p {
+  font-size: 20px;
+  color: #cbd5f5;
+  max-width: 700px;
+}
+
+/* ---------- Section Headings ---------- */
 h2 {
   font-size: 28px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border-bottom: 2px solid #3b82f6;
   display: inline-block;
   padding-bottom: 5px;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
+/* ---------- About Section ---------- */
+#about p {
+  max-width: 800px;
+  font-size: 18px;
+}
+
+/* ---------- Skills Section ---------- */
+#skills ul {
+  list-style: none;
+}
+
+#skills li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* ---------- Projects Section ---------- */
+#projects ul {
+  list-style: none;
+}
+
+#projects li {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* ---------- Contact Section ---------- */
+#contact p {
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 a {
@@ -22,4 +119,23 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* ---------- Responsive (Mobile Friendly) ---------- */
+@media (max-width: 768px) {
+  body {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  #home h1 {
+    font-size: 36px;
+  }
+
+  #home p {
+    font-size: 18px;
+  }
 }
