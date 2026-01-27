@@ -4,6 +4,17 @@
   <meta charset="UTF-8">
   <title>Arpit | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <meta http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        style-src 'self';
+        script-src 'self';
+        img-src 'self';
+        font-src 'self';
+        object-src 'none';
+        base-uri 'self';
+        form-action 'self';
+      ">
 </head>
 <body>
   <nav>
@@ -21,7 +32,7 @@
   <!-- Home -->
   <section id="home">
     <h1>Hello, I'm Arpit Shrestha</h1>
-    <p>Computing Systems student | Aspiring Software and Cybersecurity enthusiasist</p>
+    <p>Computing Systems student | Aspiring Software and Cybersecurity Enthusiasist</p>
   </section>
 
   <!-- About Me -->
@@ -71,9 +82,25 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: your.email@example.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/arpit-shrestha-5177902b2" target="_blank">View Profile</a></p>
-    <p>GitHub: <a href="https://github.com/arpsxxx" target="_blank">View Repos</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/arpit-shrestha-5177902b2"
+   target="_blank"
+   rel="noopener noreferrer">
+  View Profile
+</a>
+View Profile</a></p>
+    <p>GitHub: <a href="https://github.com/arpsxxx" target="_blank" rel="noopener noreferrer">
+  View Repos</a></p>
   </section>
+
+  <section id="security">
+  <h2>Security Best Practices</h2>
+  <p>
+    This website implements client-side security best practices including a
+    strict Content Security Policy (CSP), secure handling of external links,
+    and browser security headers. All scripts and styles are loaded locally
+    and no sensitive data is stored or processed.
+  </p>
+</section>
   <script src="script.js"></script>
 </body>
 
